@@ -1,7 +1,7 @@
 <ul class="navbar-nav bg-gradient-primary sidebar sidebar-dark accordion" id="accordionSidebar">
 
             <!-- Sidebar - Brand -->
-            <a class="sidebar-brand d-flex align-items-center justify-content-center" href="index.html">
+            <a class="sidebar-brand d-flex align-items-center justify-content-center" href="/resident">
                 <div class="sidebar-brand-icon rotate-n-15">
                     {{--  --}}
                 </div>
@@ -13,7 +13,7 @@
 
             <!-- Nav Item - Dashboard -->
             <li class="nav-item {{ request()->is('dashboard') ? 'active' : '' }}" >
-                <a class="nav-link " href="/dashboard">
+                <a class="nav-link " href="/resident">
                     <i class="fas fa-fw fa-tachometer-alt"></i>
                     <span>Dashboard</span></a>
             </li>
@@ -31,6 +31,12 @@
                 <a class="nav-link " href="/resident">
                     <i class="fas fa-fw fa-table"></i>
                     <span>Penduduk</span></a>
+            </li>
+
+            <li class="nav-item {{ request()->is('resident*') ? 'active' : '' }}">
+                <a class="nav-link " href="/resident/calendar">
+                    <i class="fas fa-fw fa-table"></i>
+                    <span>Agenda PKK</span></a>
             </li>
 
             <!-- Divider -->
